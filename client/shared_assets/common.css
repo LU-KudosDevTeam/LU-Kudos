@@ -1,0 +1,18 @@
+
+:root {
+    --val1_KWGE: #BC2C23;
+    --val2_FIDE: #7923BC;
+    --val3_WISE: #BC7623;
+    --val4_JUST: #2369BC;
+    --val5_ASOC: #008C1F;
+
+    --val1_KWGE_muted: rgba(188, 44, 35, .3);
+    --val2_FIDE_muted: rgba(121, 35, 188, .3);
+    --val3_WISE_muted: rgba(188, 118, 35, .3);
+    --val4_JUST_muted: rgba(35, 105, 188, .3);
+    --val5_ASOC_muted: rgba(0, 140, 31, .3);
+
+    --form-bkg: rgba(217, 217, 217, .95);
+    --off-white-hover: #D9D9D9;
+    --disabled-blk-txt: #222;
+}
