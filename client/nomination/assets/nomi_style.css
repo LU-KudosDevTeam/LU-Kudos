@@ -1,0 +1,194 @@
+
+        
+    html {
+        font-family: "Work Sans", sans-serif;
+        color: #fff;
+        background-color: var(--main-color);
+        overflow-x: none;
+    }
+
+    header {
+        position: fixed;
+        width: 97.80vw;
+        background-color: black;
+        padding: 2.1vmin;
+        height: 2.5vmin;
+        font-weight: 700;
+        font-size: 2.25vmin;
+        left: 0;
+        top: 0;
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    h1 {
+
+        font-weight: 800;
+        font-style: italic;
+        color: var(--main-color);
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 2vmin;
+        margin-top: 0;
+        transition: .15s linear all;
+    }
+
+    h2 {
+        color: black;
+        font-weight: 800;
+        letter-spacing: .125em;
+        font-size: 2rem;
+    }
+
+    #form-bg {
+        position: relative;
+        top: 8vh;
+        margin: auto;
+        width: 80%;
+        height: 60%;
+        background-color: var(--off-white-hover);
+        padding: 1.5%;
+    }
+
+    #form-border {
+        padding: 1% 2.5%;
+        border: 2px solid var(--main-color);
+    }
+
+    #select-container {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 40vh;
+        background-color: var(--accent);
+        border: 3px solid var(--main-color);
+        padding: 1.5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #select-group {
+        padding: .5%;
+        margin: auto;
+
+    }
+
+    #select-group button {
+        text-align: left;
+        
+        padding: 1vmin 2vw;
+        width: 60vw;
+        box-sizing: content-box;
+        
+        height: 5vmax;
+        
+        
+        
+    }
+
+    .btn-default {
+        background-color: var(--off-white-hover);
+        color: var(--disabled-blk-txt);
+        border-radius: 10px;
+        border: 0px;
+        
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.0);
+    }
+
+    .btn-chosen {
+        background-color: var(--main-color);
+        color: white;
+        border-radius: 20px;
+        border: 6px solid var(--main-color);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    #select-group button:hover, #select-group button:focus{
+        background-color: white;
+        color: black;
+    }
+
+
+
+    button {
+        font-family: "Work Sans", sans-serif;
+        transition: .15s linear all;
+    }
+
+    .select-btn-name {
+        font-weight: 800;
+        font-size: 1.75vmax;
+        letter-spacing: .07em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .select-btn-desc {
+        font-weight: 500;
+        font-size:1vmax;
+        letter-spacing: .025em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    #next {
+        background-color: var(--main-color);
+        color: white;
+        font-weight: 700;
+        font-style: italic;
+        margin: 0;
+        margin-top: 3vmax;
+        width: 50vw;
+        font-size: 1.25rem;
+        height: 2.5rem;
+        position: relative;
+        box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.35);
+        border: none;
+       
+  
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #next:hover, #next:focus {
+        background-color: var(--disabled-blk-txt);
+        color: white;     
+    }
+
+    @media (max-width: 768px) {
+        /* … */
+        .select-btn-dept::after, .select-btn-title::after {
+            content: "\a";
+            white-space: pre;
+        }
+        .divider {
+            display: none;
+        }
+        #select-group button {
+            height: 6vmax;
+        }
+        h2 {
+            color: black;
+            font-weight: 800;
+            letter-spacing: .1em;
+            font-size: 1.75rem;
+            text-align: center;
+        }
+        header {
+            width: 97.80vw;
+            background-color: black;
+            padding: 1.1vmax;
+            height: 3vmax;
+            font-weight: 700;
+            font-size: 2.5vmax;
+            left: 0;
+            top: 0;
+            text-align: center;
+            letter-spacing: .125em;
+        }
+
+      }
