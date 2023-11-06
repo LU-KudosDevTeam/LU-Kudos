@@ -20,7 +20,7 @@
 
 
     <header>
-        <a href = "#back">&larr;
+        <a href = "../nomination/nomi_val1.html">&larr;
 
         Lewis University Kudos</a>
     </header>
@@ -45,7 +45,7 @@
     <textarea id = "story-container">Tell me a story...</textarea>
 
 
-    <button id = "next">
+    <button id = "next" onClick="getFinalEntry()">
         SUBMIT
     </button>
 
@@ -58,5 +58,19 @@
 
 
 </body>
+
+<script>
+    function getFinalEntry()
+        {
+
+            doNext()
+            
+        }
+    function doNext(num)
+        {
+            window.location.href='../thankyou/thank-you.html'
+        }
+
+</script>
 
 </html>

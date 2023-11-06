@@ -20,7 +20,7 @@
 
 
     <header>
-        <a href = "#back">&larr;
+        <a href = "../find/find_val1.html">&larr;
 
         Lewis University Kudos</a>
     </header>
@@ -147,18 +147,33 @@
     </div>
 
 
-    <button id = "next">
+    <button id = "next" onClick="getCorrectEmployee(1)">
         NOMINATE
     </button>
 
     </div>
 </div>
 
-
-
-
-
-
 </body>
+
+<script>
+    function selectPerson()
+        {
+            // add code to put person into localStorage
+            
+        }
+
+    function getCorrectEmployee(num)
+        {
+
+            doNext(num)
+            
+        }
+    function doNext(num)
+        {
+            window.location.href='../submission/subm_val' + num + '.html'
+        }
+
+</script>
 
 </html>
