@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 
 //https://www.section.io/engineering-education/how-to-use-cors-in-nodejs-with-express/
-const cors = require('cors');
-app.use(cors())
+// const cors = require('cors');
+// app.use(cors())
 
 app.use(express.static(__dirname + '/client'))
 
