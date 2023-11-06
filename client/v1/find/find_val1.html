@@ -39,7 +39,7 @@
 
 
 <header>
-    <a href = "#back">&larr;
+    <a href = "../value/val_val1.html">&larr;
 
     Lewis University Kudos</a>
 </header>
@@ -66,7 +66,7 @@
                 <input type="text" name="" id="">
             </div>
             <div class="form_group form_btn">
-                <button type="submit">FIND EMPLOYEE</button>
+                <button type="submit" onClick="getEmployeeNames(1)">FIND EMPLOYEE</button>
             </div>
 
         </div>
@@ -75,5 +75,20 @@
 <!-- END KNOWLEDGE AREA  -->
 
 </body>
+
+<script>
+    function getEmployeeNames(num)
+        {
+
+            doNext(num)
+            
+        }
+    function doNext(num)
+        {
+            window.location.href='../nomination/nomi_val' + num + '.html'
+        }
+
+</script>
+
 
 </html>
