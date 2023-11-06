@@ -16,7 +16,7 @@
 
 
 </head>
-<body>
+<body onload = "pullMasterFile()">
 
 
     <header>
@@ -37,8 +37,8 @@
 
     <div id = "select-container">
 
-        <div id = "select-group">
-            <button class = "btn-default">
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(0)">
                 <div class = "select-btn-name">
                     Firstname Lastnameisverylong
                 </div>
@@ -58,8 +58,8 @@
             </button>
         </div>
 
-        <div id = "select-group">
-            <button class = "btn-chosen">
+        <div class = "select-group">
+            <button class = "btn-chosen select-btn" onclick="selectPerson(1)">
                 <div class = "select-btn-name">
                     Firstname Lastnameisverylong
                 </div>
@@ -79,8 +79,8 @@
             </button>
         </div>
 
-        <div id = "select-group">
-            <button class = "btn-default">
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(2)">
                 <div class = "select-btn-name">
                     Firstname Lastnameisverylong
                 </div>
@@ -100,8 +100,8 @@
             </button>
         </div>
 
-        <div id = "select-group">
-            <button class = "btn-default">
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(3)">
                 <div class = "select-btn-name">
                     Firstname Lastnameisverylong
                 </div>
@@ -121,8 +121,8 @@
             </button>
         </div>
 
-        <div id = "select-group">
-            <button class = "btn-default">
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(4)">
                 <div class = "select-btn-name">
                     Firstname Lastnameisverylong
                 </div>
@@ -157,10 +157,18 @@
 </body>
 
 <script>
-    function selectPerson()
+
+
+
+    function selectPerson(num)
         {
+
+            document.getElementsByClassName("select-btn").onclick = function(e){
+                console.log(e.target);
+              }
+
             // add code to put person into localStorage
-            
+
         }
 
     function getCorrectEmployee(num)
@@ -173,6 +181,18 @@
         {
             window.location.href='../submission/subm_val' + num + '.html'
         }
+
+
+ //   import MasterFile from './assets/FacandStaff.json'
+ //   console.log(MasterFile)
+
+    async function pullMasterFile() {
+        const response = await fetch("./assets/FacandStaff.json");
+        const data = await response.json();
+        console.log(data);
+      }
+
+    </script>
 
 </script>
 

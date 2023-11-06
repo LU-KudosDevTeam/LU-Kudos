@@ -1,0 +1,254 @@
+[
+  {
+    "Name": "Abu Zahra, Fuad",
+    "Title": "Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "fabuzahra@lewisu.edu",
+    "UID": 1
+  },
+  {
+    "Name": "Abuomar, Dr. Osama",
+    "Title": "Associate Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "oabuomar@lewisu.edu",
+    "UID": 2
+  },
+  {
+    "Name": "Al-khassaweneh, Dr. Mahmood",
+    "Title": "Associate Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "malkhassaweneh@lewisu.edu",
+    "UID": 3
+  },
+  {
+    "Name": "Al-Sharif, Zaid",
+    "Title": "Associate Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "zalsharif@lewisu.edu",
+    "UID": 4
+  },
+  {
+    "Name": "Alsmadi, Dr. Yazan",
+    "Title": "Associate Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "yalsmadi@lewisu.edu",
+    "UID": 5
+  },
+  {
+    "Name": "Alzoubi, Dr. Khaled",
+    "Title": "Professor/Director of Computer and Mathematical Sciences Graduate Program",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "alzoubkh@lewisu.edu",
+    "UID": 6
+  },
+  {
+    "Name": "Bhat, Manoj",
+    "Title": "Visiting Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "bhatma@lewisu.edu",
+    "UID": 7
+  },
+  {
+    "Name": "Biryukov, Vadim",
+    "Title": "Instructor Computer Science",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "vbiryukov@lewisu.edu",
+    "UID": 8
+  },
+  {
+    "Name": "Cho, Dr. Jaeik",
+    "Title": "Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "jcho1@lewisu.edu",
+    "UID": 9
+  },
+  {
+    "Name": "Clavelli, Matthew",
+    "Title": "Assistant Professor, Computer Science",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "mclavelli@lewisu.edu",
+    "UID": 10
+  },
+  {
+    "Name": "Dominiak, Dr. Dana",
+    "Title": "Associate Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "dominida@lewisu.edu",
+    "UID": 11
+  },
+  {
+    "Name": "Dupre, FSC, Br. Thomas",
+    "Title": "Associate Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "dupreth@lewisu.edu",
+    "UID": 12
+  },
+  {
+    "Name": "Harsy Ramsay, Dr. Amanda",
+    "Title": "Associate Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "harsyram@lewisu.edu",
+    "UID": 13
+  },
+  {
+    "Name": "Howard, Dr. Cynthia",
+    "Title": "Professor, Chair",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "howardcy@lewisu.edu",
+    "UID": 14
+  },
+  {
+    "Name": "Khasawneh, Dr. Rami",
+    "Title": "Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "khasawra@lewisu.edu",
+    "UID": 15
+  },
+  {
+    "Name": "Kim, Dr. Young June",
+    "Title": "Associate Professor, Computer Engineering",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "kimyo@lewisu.edu",
+    "UID": 16
+  },
+  {
+    "Name": "Kim, Sung",
+    "Title": "Assistant Professor Computer Science",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "skim2@lewisu.edu",
+    "UID": 17
+  },
+  {
+    "Name": "Klump, Dr. Ray",
+    "Title": "Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "klumpra@lewisu.edu",
+    "UID": 18
+  },
+  {
+    "Name": "Lewis, Dr. Michael",
+    "Title": "Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "mlewis8@lewisu.edu",
+    "UID": 19
+  },
+  {
+    "Name": "Martinez, Dr. Gina",
+    "Title": "Associate Professor, Computer Engineering",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "martingi@lewisu.edu",
+    "UID": 20
+  },
+  {
+    "Name": "Meyer, Dr. Marie",
+    "Title": "Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "mmeyer2@lewisu.edu",
+    "UID": 21
+  },
+  {
+    "Name": "Nowak, David",
+    "Title": "Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "dnowak2@lewisu.edu",
+    "UID": 22
+  },
+  {
+    "Name": "Omari, Dr. Safwan",
+    "Title": "Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "omarisa@lewisu.edu",
+    "UID": 23
+  },
+  {
+    "Name": "Perry, Dr. Jason",
+    "Title": "Associate Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "perryjn@lewisu.edu",
+    "UID": 24
+  },
+  {
+    "Name": "Plass, Dr. Mathias",
+    "Title": "Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "plassma@lewisu.edu",
+    "UID": 25
+  },
+  {
+    "Name": "Pogue, Eric",
+    "Title": "Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "epogue@lewisu.edu",
+    "UID": 26
+  },
+  {
+    "Name": "Schultze, Dr. Adam",
+    "Title": "Assistant Professor, Mathematics",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "aschultze@lewisu.edu",
+    "UID": 27
+  },
+  {
+    "Name": "Smith, Michael",
+    "Title": "Instructor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "msmith42@lewisu.edu",
+    "UID": 28
+  },
+  {
+    "Name": "Snell, Linda",
+    "Title": "Administrative Assistant",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "snellli@lewisu.edu",
+    "UID": 29
+  },
+  {
+    "Name": "Spangler, Eric",
+    "Title": "Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "spangler@lewisu.edu",
+    "UID": 30
+  },
+  {
+    "Name": "Speva, Jayme",
+    "Title": "Instructor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "spevaja@lewisu.edu",
+    "UID": 31
+  },
+  {
+    "Name": "Stephenson, Dr. Brittany",
+    "Title": "Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "bstephenson@lewisu.edu",
+    "UID": 32
+  },
+  {
+    "Name": "Sulyok, Dr. Cara",
+    "Title": "Assistant Professor",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "csulyok@lewisu.edu",
+    "UID": 33
+  },
+  {
+    "Name": "Szczurek, Dr. Piotr",
+    "Title": "Associate Professor, Director of Master of Science Data Program",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "szczurpi@lewisu.edu",
+    "UID": 34
+  },
+  {
+    "Name": "Udagedara, Dr. Indika",
+    "Title": "Assistant Professor, Data Science",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "iudagedara@lewisu.edu",
+    "UID": 35
+  },
+  {
+    "Name": "Wedyan, Dr. Fadi",
+    "Title": "Assistant Professor, Computer Science",
+    "Dept": "Engineering, Computing and Mathematical Sciences",
+    "Email": "fwedyan@lewisu.edu",
+    "UID": 36
+  }
+]
