@@ -4,6 +4,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/LU-KudosDevTeam/LU-Kudos/client/shared_assets/common.css">
 <link rel="stylesheet" href="assets/nomi_style.css">
+<script src = "./assets/nomi_script.js"></script>
 
 <style>
 
@@ -19,12 +20,12 @@
 <body>
 
 
-    <header>
-        <a href = "#back">&larr;
-    
-        Lewis University Kudos</a>
-    </header>
-    
+<header>
+    <a href = "../find/find_val3.html">&larr;
+
+    Lewis University Kudos</a>
+</header>
+
 <div id = "form-bg">
     <h1>
         NOMINATE
@@ -37,8 +38,8 @@
 
     <div id = "select-container">
 
-        <div id = "select-group">
-            <button class = "btn-default">
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
                 <div class = "select-btn-name">
                     Firstname Lastnameisverylong
                 </div>
@@ -58,10 +59,10 @@
             </button>
         </div>
 
-        <div id = "select-group">
-            <button class = "btn-chosen">
+        <div class = "select-group">
+            <button class = "btn-chosen select-btn" onclick="selectPerson(this)">
                 <div class = "select-btn-name">
-                    Firstname Lastnameisverylong
+                    Firstname1 Lastnameisverylong
                 </div>
                 <div class = "select-btn-desc">
                     <span class = "select-btn-dept">
@@ -79,10 +80,10 @@
             </button>
         </div>
 
-        <div id = "select-group">
-            <button class = "btn-default">
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
                 <div class = "select-btn-name">
-                    Firstname Lastnameisverylong
+                    Firstname2 Lastnameisverylong
                 </div>
                 <div class = "select-btn-desc">
                     <span class = "select-btn-dept">
@@ -100,10 +101,10 @@
             </button>
         </div>
 
-        <div id = "select-group">
-            <button class = "btn-default">
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
                 <div class = "select-btn-name">
-                    Firstname Lastnameisverylong
+                    Firstname3 Lastnameisverylong
                 </div>
                 <div class = "select-btn-desc">
                     <span class = "select-btn-dept">
@@ -121,10 +122,10 @@
             </button>
         </div>
 
-        <div id = "select-group">
-            <button class = "btn-default">
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
                 <div class = "select-btn-name">
-                    Firstname Lastnameisverylong
+                    Firstname4 Lastnameisverylong
                 </div>
                 <div class = "select-btn-desc">
                     <span class = "select-btn-dept">
@@ -147,12 +148,16 @@
     </div>
 
 
-    <button id = "next">
+    <button id = "next" onClick="getCorrectEmployee(3)">
         NOMINATE
     </button>
 
     </div>
 </div>
+
+</body>
+
+
 
 
 

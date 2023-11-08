@@ -4,6 +4,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/LU-KudosDevTeam/LU-Kudos/client/shared_assets/common.css">
 <link rel="stylesheet" href="assets/nomi_style.css">
+<script src = "./assets/nomi_script.js"></script>
 
 <style>
 
@@ -38,7 +39,7 @@
     <div id = "select-container">
 
         <div class = "select-group">
-            <button class = "btn-default select-btn" onclick="selectPerson(0)">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
                 <div class = "select-btn-name">
                     Firstname Lastnameisverylong
                 </div>
@@ -59,9 +60,9 @@
         </div>
 
         <div class = "select-group">
-            <button class = "btn-chosen select-btn" onclick="selectPerson(1)">
+            <button class = "btn-chosen select-btn" onclick="selectPerson(this)">
                 <div class = "select-btn-name">
-                    Firstname Lastnameisverylong
+                    Firstname1 Lastnameisverylong
                 </div>
                 <div class = "select-btn-desc">
                     <span class = "select-btn-dept">
@@ -80,9 +81,9 @@
         </div>
 
         <div class = "select-group">
-            <button class = "btn-default select-btn" onclick="selectPerson(2)">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
                 <div class = "select-btn-name">
-                    Firstname Lastnameisverylong
+                    Firstname2 Lastnameisverylong
                 </div>
                 <div class = "select-btn-desc">
                     <span class = "select-btn-dept">
@@ -101,9 +102,9 @@
         </div>
 
         <div class = "select-group">
-            <button class = "btn-default select-btn" onclick="selectPerson(3)">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
                 <div class = "select-btn-name">
-                    Firstname Lastnameisverylong
+                    Firstname3 Lastnameisverylong
                 </div>
                 <div class = "select-btn-desc">
                     <span class = "select-btn-dept">
@@ -122,9 +123,9 @@
         </div>
 
         <div class = "select-group">
-            <button class = "btn-default select-btn" onclick="selectPerson(4)">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
                 <div class = "select-btn-name">
-                    Firstname Lastnameisverylong
+                    Firstname4 Lastnameisverylong
                 </div>
                 <div class = "select-btn-desc">
                     <span class = "select-btn-dept">
@@ -156,44 +157,6 @@
 
 </body>
 
-<script>
 
-
-
-    function selectPerson(num)
-        {
-
-            document.getElementsByClassName("select-btn").onclick = function(e){
-                console.log(e.target);
-              }
-
-            // add code to put person into localStorage
-
-        }
-
-    function getCorrectEmployee(num)
-        {
-
-            doNext(num)
-            
-        }
-    function doNext(num)
-        {
-            window.location.href='../submission/subm_val' + num + '.html'
-        }
-
-
- //   import MasterFile from './assets/FacandStaff.json'
- //   console.log(MasterFile)
-
-    async function pullMasterFile() {
-        const response = await fetch("./assets/FacandStaff.json");
-        const data = await response.json();
-        console.log(data);
-      }
-
-    </script>
-
-</script>
 
 </html>
