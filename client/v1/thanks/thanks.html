@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/LU-KudosDevTeam/LU-Kudos@main/client/shared_assets/common.css">
 <link rel="stylesheet" href="assets/thanks_style.css">
 <link rel="stylesheet" href="assets/thanks_responsive.css">
+<script src = "./assets/thanks_script.js"></script>
 
 <style>
 
@@ -30,11 +31,13 @@
         margin: 0;
         padding: 0;
     }
+
+
 </style> 
 
 
 </head>
-<body>  
+<body onload="results()">  
 <header>
     <a href = "../landing/landing.html">
 
@@ -52,19 +55,19 @@
     <ul>
         <li>
             <p>Name: </p>
-            <b>FIRSTNAME LASTNAMEISVERYLONG</b>
+            <span id = "fullName">FIRSTNAME LASTNAMEISVERYLONG</span>
         </li>
         <li>
             <p>Value: </p>
-            <b>EMPATHY</b>
+            <span id = "fullValue">EMPATHY</span>
         </li>
         <li>
             <p>Time: </p>
-            <b>2023-12-31 23:59:59 (CST)</b>
+            <span id="fullTime"> 2023-12-31 23:59:59 (CST) </span>
         </li>
         <li>
             <p>msgID: </p>
-            <b>00001-EMAILNAME-VAL6-235959-20231231</b>
+            <span id="fullMessageID">00001-EMAILNAME-VAL6-235959-20231231</span>
         </li>
     </ul>
 </div>
@@ -72,9 +75,6 @@
     <button type="button" onclick="window.location.href='../landing/landing.html';">Return To Start</button>
 </div>
 <!-- ============ END SIGNUM AREA ============== -->
-
-
-
 
 
 </body>

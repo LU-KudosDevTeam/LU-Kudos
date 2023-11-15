@@ -1,4 +1,5 @@
-[
+{"result": {
+  "rows": [
   {
     "Name": "Abu Zahra, Fuad",
     "Title": "Assistant Professor",
@@ -252,3 +253,5 @@
     "UID": 36
   }
 ]
+}
+}

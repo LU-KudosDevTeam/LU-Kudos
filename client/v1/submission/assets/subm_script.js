@@ -1,6 +1,7 @@
 
     function getFinalEntry(num)
         {
+            localStorage.setItem("details", document.getElementById("story-container").value)
 
             doNext(num)
             

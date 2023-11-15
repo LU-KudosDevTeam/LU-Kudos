@@ -6,12 +6,15 @@
 
 
 
+
     html {
         font-family: "Work Sans", sans-serif;
         color: #fff;
         background-color: var(--main-color);
         overflow-x: none;
     }
+
+	
 
     header {
         position: fixed;
@@ -164,6 +167,8 @@
         background-color: var(--disabled-blk-txt);
         color: white;     
     }
+
+	
 
     @media (max-width: 768px) {
         /* … */
@@ -575,18 +580,19 @@
 
 .thankyou_btn button:hover{
     opacity: 0.83;
+	box-shadow: #FFF 0px 0px 5px 3px;
 }
 
+#fullName, #fullValue, #fullTime, #fullMessageID {
+	font-weight: 700;
+	color:#000;
+	
+}
 
 /* 
-
-
-
     font-family: 'Work Sans', sans-serif;
 
     font-family: 'Krona One', sans-serif;
-
- 
 
 */
 
