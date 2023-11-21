@@ -12,16 +12,18 @@
         color: #fff;
         background-color: var(--main-color);
         overflow-x: none;
+		height: 100vh;
     }
 
 	
-
+	/* Fixed for landscape */
     header {
         position: fixed;
-        width: 97.80vw;
+		box-sizing: border-box;
+        width: 100vw;
         background-color: black;
         padding: 2.1vmin;
-        height: 2.5vmin;
+        height: 6.5vmin;
         font-weight: 700;
         font-size: 2.25vmin;
         left: 0;
@@ -586,8 +588,15 @@
 #fullName, #fullValue, #fullTime, #fullMessageID {
 	font-weight: 700;
 	color:#000;
+
+	font-family: Work Sans;
+	font-size: 30px;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 1.5px;
 	
 }
+
 
 /* 
     font-family: 'Work Sans', sans-serif;

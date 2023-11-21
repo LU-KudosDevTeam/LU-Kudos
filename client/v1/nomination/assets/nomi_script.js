@@ -56,7 +56,7 @@
             console.log(employee);
             }
 
-            // comment these lines out to turn off the debug feature
+            // comment these lines out to disable the debug feature
             debugSelectBtnClicked() 
             debugShowAllStorageProgress()
         }
@@ -91,7 +91,54 @@
         // TODO: if match is found, replace the textContent of each button / generate / delete more buttons.
         // this may need to be done using CSS classes to help iterate what has or hasn't been touched.
 
-        // Psuedocode: for every element in dataset, set button.name = dataset.name, etc.
+        // This entire section has been highly inspired by a similar question via ChatGPT 3.5
+
+        const btnContainer = document.getElementById("select-container")
+
+        //btnContainer.innerHTML = ""; //comment this out to enable the debug buttons
+
+        // Loop through each person and create HTML elements to display them
+        dataset.forEach(personPulled => {
+            
+        // Create a div element for each student
+        const personDiv = document.createElement('div');
+        personDiv.classList.add('select-group');
+            
+            // Create HTML content for the person (name, dept, title, email)
+            const personInfo = `
+                
+                <button class = 'btn-default select-btn' onclick='selectPerson(this)'>
+                    <div class = 'select-btn-name'>
+                        ${personPulled.name}
+                    </div>
+                    <div class = 'select-btn-desc'>
+                        <span class = 'select-btn-dept'>
+                        ${personPulled.dept}
+                        </span> 
+                        <span class = 'divider'>|</span> 
+                        <span class = 'select-btn-title'> 
+                            ${personPulled.title}
+                        </span> 
+                        <span class = 'divider'>|</span> 
+                        <span class = 'select-btn-email'>
+                            ${personPulled.email}
+                        </span>
+                    </div>
+                </button>
+            
+            `
+            // Set the HTML content inside the person div
+            personDiv.innerHTML = personInfo;
+
+            // Append the person div to the btnContainer
+            btnContainer.appendChild(personDiv);
+
+            })
+        
+        // End ChatGPT 3.5 inspiration
+        
+
+
     }
     
     function filterData(data) {
@@ -99,21 +146,21 @@
         employee = JSON.parse(localStorage.getItem("employee"))
 
         function filterName(record) {
-            return record.Name.includes(employee.fname) && record.Name.includes(employee.lname);
+            return record.name.includes(employee.fname) && record.name.includes(employee.lname);
         }
 
         function filterTitle(record) {
-            return record.Title.includes(employee.tname);
+            return record.title.includes(employee.tname);
 
         //  we know that this: record.Title.includes('') returns all data, so our filter works as expected - intentionally permissive
         }
 
         function filterDept(record) {
-            return record.Dept.includes(employee.dname);
+            return record.dept.includes(employee.dname);
         }
 
         function filterEmail(record) {
-            return record.Email.includes(employee.ename);
+            return record.email.includes(employee.ename);
         }
 
         // this starts by pulling all rows, and pushing each one through our mini filter functions, one at a time
@@ -134,7 +181,7 @@
             console.log(dataByEmail) // the data that was actually pulled
         }
 
-        debugFilterData() // comment this out to turn off the debug feature.
+        debugFilterData() // comment this out to disable the debug feature.
 
         // calls the function to replace the textContent of each button / generate / delete more buttons.
         replaceAllButtons(dataByEmail)
@@ -151,7 +198,7 @@
             console.log(data);
         }
 
-        debugMasterFile() // comment this out to turn off the debug feature.
+        debugMasterFile() // comment this out to disable the debug feature.
 
         // calls the filter function
         filterData(data)
