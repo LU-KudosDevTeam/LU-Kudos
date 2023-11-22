@@ -25,6 +25,10 @@ function setValuePathway(num)
 
     localStorage.setItem("namedval", valSignum);
     localStorage.setItem("value", num);
+
+    //set a timer to prevent submission spam
+    localStorage.setItem("timeOld", Date.now())
+
     doNext(num)
 }
 
