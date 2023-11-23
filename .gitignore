@@ -106,4 +106,4 @@ dist
 # MacOS .DS_Store
 .DS_Store
 
-testemail.js
+testemail*.js
