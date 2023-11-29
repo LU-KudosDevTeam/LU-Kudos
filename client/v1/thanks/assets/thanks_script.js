@@ -110,13 +110,21 @@ function replaceResults(fullSubmission) {
                     console.log("Here's what the NodeJS server had to say about this:" + JSON.stringify(error))
                 });
         }
-    
-    if (diffMinutes > 1.5) {    // should call the send-mail nodeJS endpoint if it's been longer than 1.5 minutes since the last submission was started
+
+
+    // changed timer to 30 seconds
+    if (diffMinutes > .5) {    // should call the send-mail nodeJS endpoint if it's been longer than 1.5 minutes since the last submission was started
         sendMail();
     }
     else
     {
-        console.log(`Please wait another ${90 - (diff / 1000)} seconds before trying to send another email.`)
+        // TODO: give user this countdown via HTML. tell them to refresh when complete
+        msg = `Please wait another ${Math.floor(30 - (diff / 1000))} seconds before trying to send another email. You will have to manually refresh your page.`
+
+        document.getElementById("thanks_title").textContent = "PLEASE WAIT"
+        document.getElementById("thanks_desc").textContent = msg
+        document.getElementById("thank_you_list").style.opacity = ".1"
+        console.log(msg)
     }
     
 }
