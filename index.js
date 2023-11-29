@@ -144,6 +144,36 @@ async function sendMail(jsonData) {
         }, viewPath: './client/eml_template', extName: '.hbs'
     }));
     
+    mainColor = "red"
+    accentColor = "pink"
+
+
+    switch(jsonData.value)
+    {
+        case "1":
+            mainColor = "#BC2C23"
+            accentColor = "#ebbfbd"
+            break;
+        case "2":
+            mainColor = "#7923BC"
+            accentColor = "#d7bdeb"
+            break;
+        case "3":
+            mainColor = "#BC7623"
+            accentColor = "#ebd6bd"
+            break;
+        case "4":
+            mainColor = "#2369BC"
+            accentColor = "#bdd2eb"
+            break;
+        case "5":
+            mainColor = "#008C1F"
+            accentColor = "#b2dcbb"
+            break;
+
+    }
+
+    
 
     var mailOptions = {
         from: `LU Kudos ${email_acctname}`,
@@ -154,7 +184,8 @@ async function sendMail(jsonData) {
             namedval: jsonData.namedval,
             details: jsonData.details,
             finalID: jsonData.finalID,
-            makemered: "#8B0000"
+            mainColor: mainColor,
+            accentColor: accentColor
         } 
     };
 

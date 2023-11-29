@@ -21,7 +21,7 @@
 
 
     <header>
-        <a href = "../nomination/nomi_val4.html">&larr;
+        <a href = "../nomination/nomi_val1.html">&larr;
 
         Lewis University Kudos</a>
     </header>
@@ -39,14 +39,20 @@
 
     <p>
         Explain how this employee demonstrated the value of 
-        <span id = "details-val">JUSTICE</span>
-        to you:
+        <span id = "details-val">KNOWLEDGE</span>
+        to you: <br><span id = "char_count"></span>
     </p>
 
-    <textarea id = "story-container">Tell me a story...</textarea>
+    <textarea id = "story-container" 
+        placeholder="Use up to 1000 characters to tell us about how this employee demonstrated this value to you." 
+        maxlength="1000"
+        onKeyDown="countChars('story-container','char_count',1000)" 
+        onKeyUp="countChars('story-container','char_count',1000)"
+        ></textarea>
+   
 
 
-    <button id = "next" onClick="getFinalEntry(4)">
+    <button id = "next" onClick="getFinalEntry(1)">
         SUBMIT
     </button>
 
