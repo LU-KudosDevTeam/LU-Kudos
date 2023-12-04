@@ -78,7 +78,7 @@ function replaceResults(fullSubmission) {
 
 
 
-    // TODO: Call a function that actually emails everything out, as well as stores a copy of this somewhere for future dev reference
+    // DONE: Call a function that actually emails everything out, as well as stores a copy of this somewhere for future dev reference
 
     // inspired by this: https://stackoverflow.com/questions/12517359/performance-date-now-vs-date-gettime
     diff = submitObj.timeNow - submitObj.timeOld
@@ -118,9 +118,9 @@ function replaceResults(fullSubmission) {
     }
     else
     {
-        // TODO: give user this countdown via HTML. tell them to refresh when complete
+        // DONE: give user this countdown via HTML. tell them to refresh when complete
         msg = `Please wait another ${Math.floor(30 - (diff / 1000))} seconds before trying to send another email. You will have to manually refresh your page.`
-
+        
         document.getElementById("thanks_title").textContent = "PLEASE WAIT"
         document.getElementById("thanks_desc").textContent = msg
         document.getElementById("thank_you_list").style.opacity = ".1"

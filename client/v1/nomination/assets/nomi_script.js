@@ -87,8 +87,13 @@
             window.location.href='../find/find_val' + num + '.html';
         }
 
-        // TODO: if no match found, call noDataFound()
-        // TODO: if match is found, replace the textContent of each button / generate / delete more buttons.
+        // DONE: if no match found, call noDataFound()
+        if (dataset.length == 0) {
+            noDataFound()
+        }
+
+        
+        // DONE: if match is found, replace the textContent of each button / generate / delete more buttons.
         // this may need to be done using CSS classes to help iterate what has or hasn't been touched.
 
         // This entire section has been highly inspired by a similar question via ChatGPT 3.5
