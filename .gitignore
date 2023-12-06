@@ -109,4 +109,4 @@ dist
 testemail*.js
 
 # VS Code
-/.vscode
+.vscode/*

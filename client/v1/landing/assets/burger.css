@@ -16,8 +16,8 @@ body {
   --hamburger-gap: 8px;
   --foreground: white;       
   --background: rgba(51, 51, 51, .4);
-  --side-background: rgba(51, 51, 51, .4);
-  --hamburger-margin: 10px;
+  --side-background: rgba(51, 51, 51, .9);
+  --hamburger-margin: 15px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
@@ -92,7 +92,7 @@ body {
   transition: translate var(--animation-timing);
   translate: -100%;
   padding: 0.5rem 1rem;
-  margin-top: calc(var(--hamburger-height) + var(--hamburger-margin) - 1.25rem);
+  margin-top: calc(var(--hamburger-height) + var(--hamburger-margin) - 1rem);
   padding-bottom: calc(var(--hamburger-height) + var(--hamburger-margin) - 2rem);
   background-color: var(--side-background);
   color: var(--foreground);

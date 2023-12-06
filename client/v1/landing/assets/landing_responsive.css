@@ -34,6 +34,12 @@
 }
 
 @media all and (max-width: 767px){
+    /* Inspired by: https://stackoverflow.com/questions/72851806/move-the-first-list-item-to-the-bottom-in-an-unordered-list-when-browsing-in-tab */
+    .signum_list li:nth-child(5)
+    {
+        order: 4;
+    }
+
     .m_none{
         display: none;
     }
