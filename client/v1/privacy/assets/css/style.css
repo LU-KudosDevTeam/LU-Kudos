@@ -1,0 +1,187 @@
+ 
+
+ @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap');
+
+
+   /*********************************/
+  /***********1.GLOBAL CSS*********/
+ /********************************/
+ /* Default CSS */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, span, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   background: transparent;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+body{ 
+	font-family: 'Work Sans';
+  background: #222;
+}
+button{
+  outline: none !important;
+}
+input
+{
+    outline:none !important;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin:0;
+  padding:0;
+}
+input, button, textarea, select{
+  outline: none;
+}
+.btn.focus, .btn:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #283562;
+  overflow: hidden;
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+   /*********************************/
+  /***********2.GLOBAL CSS**********/
+ /********************************/
+
+ header {
+	position: fixed;
+	width: 97.80vw;
+	background-color: black;
+	padding: 18px 0; 
+	font-weight: 700;
+	font-size: 2.25vmin;
+	left: 0;
+	top: 0;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+	color: #FFF; 
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: 5px;
+}
+
+.about_box {
+	max-width: 1196px;
+	width: 100%;
+	margin: 113px auto 0 auto;
+}
+
+.about_h2 {
+	color: #FFF;
+	text-align: center; 
+	font-size: 80px;
+	font-style: italic;
+	font-weight: 900;
+	line-height: normal;
+	letter-spacing: 3.2px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about_h2::after {
+	content: '';
+	position: absolute;
+	width: 80%;
+	margin: 0 auto;
+	bottom: -12px;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	background: #fff;
+	height: 5px;
+}
+
+.about_text p {
+	color: #DDD; 
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0.1px;
+	margin-bottom: 22px;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 1200px){
+  .main {
+    padding: 0 20px;
+  }
+}
+@media all and (max-width: 991px){
+  .about_h2 { 
+    font-size: 60px; 
+  }
+  .about_text p { 
+    font-size: 18px; 
+  }
+}
+@media all and (max-width: 576px){
+  header a { 
+    font-size: 16px; 
+  }
+  .about_h2 {
+    font-size: 41px;
+  }
+  .about_h2::after { 
+    width: 100%; 
+  }
+  .about_text p {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+}
