@@ -15,6 +15,7 @@ This project is a website that makes it easy to send kudos to Lewis University f
   - Express
   - CORS
   - Nodemailer
+  - Handlebars
   - dotenv
 
 ### Installation and Setup (after cloning):
