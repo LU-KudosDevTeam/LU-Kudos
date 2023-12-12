@@ -18,10 +18,7 @@ This project is a website that makes it easy to send kudos to Lewis University f
   - dotenv
 
 ### Initial Usage:
-- npm install express
-- npm install cors
-- npm install nodemailer
-- npm install dotenv
+- npm i express cors nodemailer nodemailer-express-handlebars dotenv
 - node index.js
 
 
