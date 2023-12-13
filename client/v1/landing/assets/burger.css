@@ -17,7 +17,7 @@ body {
   --foreground: white;       
   --background: rgba(51, 51, 51, .4);
   --side-background: rgba(51, 51, 51, .9);
-  --hamburger-margin: 15px;
+  --hamburger-margin: clamp(10px, 1vw, 13px);
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
@@ -30,7 +30,7 @@ body {
   gap: var(--hamburger-gap);
   width: max-content;
   position: absolute;
-  top: var(--hamburger-margin);
+  top: 2vmin;
   left: var(--hamburger-margin);
   z-index: 2;
   cursor: pointer;

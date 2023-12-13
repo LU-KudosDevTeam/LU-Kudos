@@ -1,13 +1,15 @@
  
 
- @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap');
-
-
+ 
    /*********************************/
   /***********1.GLOBAL CSS*********/
  /********************************/
  /* Default CSS */
+
+:root {
+  --p-fontsize: 2vmax;
+}
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -24,17 +26,33 @@ time, mark, audio, span, video {
    padding: 0;
    border: 0;
    outline: 0;
-   font-size: 100%;
+   /* font-size: 100%; */
    background: transparent;
 }
 table {
    border-collapse: collapse;
    border-spacing: 0;
 }
-body{ 
-	font-family: 'Work Sans';
-  background: #222;
+.single_about a {
+  color: #008C1F;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
+
+.single_about a:hover {
+  background-color: black;
+}
+
+.single_about a:visited {
+  color : #2369BC;
+}
+
+.subheader {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2vmin;
+}
+
 button{
   outline: none !important;
 }
@@ -69,8 +87,9 @@ a:hover{
   text-decoration: none;
 }
 body{
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-family: 'Work Sans';
+  background: #333;
+  font-size: var(--p-fontsize);
   font-weight: 400;
   color: #283562;
   overflow: hidden;
@@ -89,7 +108,7 @@ img{
 
  header {
 	position: fixed;
-	width: 97.80vw;
+	width: 100vw;
 	background-color: black;
 	padding: 18px 0; 
 	font-weight: 700;
@@ -118,11 +137,11 @@ header a {
 .about_h2 {
 	color: #FFF;
 	text-align: center; 
-	font-size: 80px;
+	font-size: 6vmax;
 	font-style: italic;
 	font-weight: 900;
 	line-height: normal;
-	letter-spacing: 3.2px;
+	letter-spacing: 0.5px;
   position: relative;
   margin-bottom: 50px;
 }
@@ -142,10 +161,10 @@ header a {
 
 .about_text p {
 	color: #DDD; 
-	font-size: 20px;
+	font-size: var(--p-fontsize);
 	font-style: normal;
 	font-weight: 400;
-	line-height: 26px;
+	line-height: calc(var(--p-fontsize) * 1.25);
 	letter-spacing: 0.1px;
 	margin-bottom: 22px;
 }
@@ -162,6 +181,11 @@ header a {
 
 .single_about ul li p {
 	margin-bottom: 5px;
+}
+
+.main {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
 }
 
 
@@ -181,7 +205,7 @@ header a {
     font-size: 60px; 
   }
   .about_text p { 
-    font-size: 18px; 
+    font-size: var(--p-fontsize); 
   }
   .single_about h4 {
     font-size: 24px; 
@@ -199,7 +223,7 @@ header a {
     width: 100%; 
   }
   .about_text p {
-    font-size: 14px;
+    font-size: var(--p-fontsize);
     margin-bottom: 14px;
   }
 }
