@@ -3,17 +3,70 @@
 <head>
 	<title>Dev Selection Screen for LU Kudos</title>
 </head>
-<body>
-	<h1>Choose the version you want to run:</h1>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
+
+	html {
+		background-color: #111;
+	}
+
+	h1 {
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, -35%);
+		font-family: "Krona One", sans-serif;
+		text-align: center;
+		color: #eee;
+	}
+
+	button {
+		font-family: "Work Sans", sans-serif;
+		text-align: center;
+		font-size: 2vmin;
+		padding: 2vmin;
+		border: none;
+	}
+
+	button:hover:enabled {
+		background-color: #2369BC;
+		color: white;
+		border: none;
+	}
+
+	.vert_center{
+		position: relative;
+		top: 50vh;
+		/* transform: translate(-50%, -45%); */
+		padding: 10px;
+		/* left: 50%; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+	}
+
 	
-	<button onclick="window.location.href='./v1/landing/landing.html';">
-		LU Kudos v1
-	</button>
-	<button disabled>
-		LU Kudos v1-5
-	</button>
-	<button disabled>
-		LU Kudos v2
-	</button>
+</style>
+
+
+<body>
+	
+	<h1>Choose the version <br> you want to run:</h1>
+	<div class = "vert_center">
+		<div>
+		<button onclick="window.location.href='./v1/landing/landing.html';">
+			LU Kudos v1
+		</button>
+		<button onclick="window.location.href='./pathway/landing.html';">
+			LU Kudos v1.5
+		</button>
+		<button disabled>
+			LU Kudos v2
+		</button>
+	</div>
+	</div>
 </body>
 </html>

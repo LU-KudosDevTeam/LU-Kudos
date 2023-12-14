@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FIND EMPLOYEE</title> 
+<link rel="stylesheet" href="/common.css">
+<link rel="stylesheet" href="../assets/css/find_style.css">
+<link rel="stylesheet" href="../assets/css/find_responsive.css">
+<script src = "../assets/js/find_script.js"></script>
+<script src="../assets/js/color.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> -->
+<script src="/handlebars.js"></script>
+
+<script id="hbs_color" type="text/x-handlebars-template">
+    :root {
+        --main-color:var( {{mainColor}} );
+        --input-color: var( {{inputColor}} );
+        --accent:var( {{accent}} );
+    }
+</script>
+
+<style id = "result">
+
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+</style>
+
+
+
+</head>
+<body onload = "colorUs()">
+
+
+
+
+
+<header>
+    <a href = "../pathway/value.html">&larr;
+
+    Lewis University Kudos</a>
+</header>
+
+<!-- START KNOWLEDGE AREA  -->
+<div class="form_area">
+    <div class="main_form">
+        <h2>FIND EMPLOYEE</h2>
+        <div class="main_form_box">
+            <div class="form_group">
+                <label for="fname">FIRST NAME:</label>
+                <input type="text" name="fname">
+            </div>
+            <div class="form_group">
+                <label for="lname">LAST NAME:</label>
+                <input type="text" name="lname">
+            </div>
+            <div class="form_group">
+                <label for="tname">TITLE:</label>
+                <input type="text" name="tname">
+            </div>
+            <div class="form_group">
+                <label for="dname">DEPARTMENT:</label>
+                <input type="text" name="dname">
+            </div> 
+            <div class="form_group">
+                <label for="ename">EMAIL ADDRESS:</label>
+                <input type="text" name="ename">
+            </div>
+            <div class="form_group form_btn">
+                <button type="submit" onClick="getEmployeeNames()">FIND EMPLOYEE</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- END KNOWLEDGE AREA  -->
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" href="/common.css">
+<link rel="stylesheet" href="../assets/css/subm_style.css">
+<script src = "../assets/js/subm_script.js"></script>
+
+<script src = "../assets/js/color.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> -->
+<script src="/handlebars.js"></script>
+
+<script id="hbs_color" type="text/x-handlebars-template">
+    :root {
+        --main-color:var( {{mainColor}} );
+        --input-color: var( {{inputColor}} );
+        --accent:var( {{accent}} );
+    }
+</script>
+
+<style id = "result">
+
+</style>
+
+
+
+</head>
+<body onload = "replaceName()">
+
+
+    <header>
+        <a href = "../pathway/nomi.html">&larr;
+
+        Lewis University Kudos</a>
+    </header>
+
+<div id = "form-bg">
+    <h1>
+        DETAILS
+    </h1>
+
+    <div id = "form-border">
+    <p id = "details-title">
+        You have chosen: <br>
+        <span id = "details-name">FIRSTNAME LASTNAMEISVERYLONG</span>
+    </p>
+
+    <p>
+        Explain how this employee demonstrated the value of 
+        <span id = "details-val">KNOWLEDGE</span>
+        to you: <br><span id = "char_count"></span>
+    </p>
+
+    <textarea id = "story-container" 
+        placeholder="Use up to 1000 characters to tell us about how this employee demonstrated this value to you." 
+        maxlength="1000"
+        onKeyDown="countChars('story-container','char_count',1000)" 
+        onKeyUp="countChars('story-container','char_count',1000)"
+        ></textarea>
+   
+
+
+    <button id = "next" onClick="getFinalEntry()">
+        SUBMIT
+    </button>
+
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+
+
+
+</html>

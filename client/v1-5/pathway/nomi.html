@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+<link rel="stylesheet" href="/common.css">
+<link rel="stylesheet" href="../assets/css/nomi_style.css">
+<script src = "../assets/js/nomi_script.js"></script>
+
+<script src = "../assets/js/color.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> -->
+<script src="/handlebars.js"></script>
+
+<script id="hbs_color" type="text/x-handlebars-template">
+    :root {
+        --main-color:var( {{mainColor}} );
+        --input-color: var( {{inputColor}} );
+        --accent:var( {{accent}} );
+    }
+</script>
+
+<style id = "result">
+
+</style>
+
+
+</head>
+<body onload = "pullMasterFile()">
+
+
+    <header>
+        <a href = "../pathway/find.html">&larr;
+
+        Lewis University Kudos</a>
+    </header>
+
+<div id = "form-bg">
+    <h1>
+        NOMINATE
+    </h1>
+
+    <div id = "form-border">
+    <h2>
+        SELECT EMPLOYEE:
+    </h2>
+
+    <div id = "select-container">
+
+        <!-- Buttons Here are for Testers -->
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
+                <div class = "select-btn-name">
+                    Cherrington, Jefferson
+                </div>
+                <div class = "select-btn-desc">
+                    <span class = "select-btn-dept">
+                    Department of Academia
+                    </span> 
+                    <span class = "divider">|</span> 
+                    <span class = "select-btn-title"> 
+                        LewisU Kudos Software Tester 
+                    </span> 
+                    <span class = "divider">|</span> 
+                    <span class = "select-btn-email">
+                        jeffersonacherring@lewisu.edu 
+                    </span>
+                </div>
+            </button>
+        </div>
+
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
+                <div class = "select-btn-name">
+                    Rashid, Mohammad
+                </div>
+                <div class = "select-btn-desc">
+                    <span class = "select-btn-dept">
+                    Department of Academia
+                    </span> 
+                    <span class = "divider">|</span> 
+                    <span class = "select-btn-title"> 
+                        LewisU Kudos Software Tester 
+                    </span> 
+                    <span class = "divider">|</span> 
+                    <span class = "select-btn-email">
+                        mohammedrashid1@lewisu.edu 
+                    </span>
+                </div>
+            </button>
+        </div>
+
+        <div class = "select-group">
+            <button class = "btn-default select-btn" onclick="selectPerson(this)">
+                <div class = "select-btn-name">
+                    Rashid, Wali
+                </div>
+                <div class = "select-btn-desc">
+                    <span class = "select-btn-dept">
+                    Department of Academia
+                    </span> 
+                    <span class = "divider">|</span> 
+                    <span class = "select-btn-title"> 
+                        LewisU Kudos Software Tester 
+                    </span> 
+                    <span class = "divider">|</span> 
+                    <span class = "select-btn-email">
+                        walirashid@lewisu.edu 
+                    </span>
+                </div>
+            </button>
+        </div>
+
+        
+
+    </div>
+
+
+    <button id = "next" onClick="getCorrectEmployee(1)">
+        NOMINATE
+    </button>
+
+    </div>
+</div>
+
+</body>
+
+
+
+</html>
